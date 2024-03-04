@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
-import phonenumbers
+# import phonenumbers
 import webbrowser
 
 
