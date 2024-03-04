@@ -4,7 +4,6 @@ from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
 # import phonenumbers
 import webbrowser
-import platform
 
 
 
@@ -94,7 +93,6 @@ def main():
                 st.success("Basic Information Successfully Submitted!")
                 
                 webbrowser.open("https://dementia-prediction.streamlit.app/")
-                platform.system()
 
 
 
