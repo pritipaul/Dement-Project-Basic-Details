@@ -18,6 +18,7 @@ existing_data = existing_data.dropna(how="all")
 # def redirect(_url):
 #     st.markdown(f'<script>window.open("{_url}","_blank");</script>', unsafe_allow_html=True)
 #     st.stop()
+url = 'https://docs.python.org/'
 
 
 # Streamlit app code
@@ -94,8 +95,9 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                if st.button("Click here to continue"):
-                    webbrowser.open("https://dementia-prediction.streamlit.app/")
+                webbrowser.open_new_tab(url)
+                # if st.button("Click here to continue"):
+                #     webbrowser.open("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
