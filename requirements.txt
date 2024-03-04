@@ -1,5 +1,4 @@
 streamlit
-streamlit.report_thread
 pandas
 st-gsheets-connection
 email_validator
