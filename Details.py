@@ -98,7 +98,7 @@ def main():
                 # redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
-                st.switch_page("https://dement-project-result-app.streamlit.app/")
+                st.switch_page("pages/app.py")
 
 
 
