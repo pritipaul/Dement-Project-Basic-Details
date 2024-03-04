@@ -95,16 +95,6 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                st.markdown(
-                    """
-                    <a href="https://dementia-prediction.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                        <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                            Open External URL
-                        </button>
-                    </a>
-                    """,
-                    unsafe_allow_html=True
-                )
                 # redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
