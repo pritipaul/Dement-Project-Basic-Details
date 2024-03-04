@@ -3,7 +3,9 @@ import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
 # import phonenumbers
-import webbrowser
+import web-browser
+import platform
+
 
 
 # Establish connection to Google Sheets
@@ -92,6 +94,8 @@ def main():
                 st.success("Basic Information Successfully Submitted!")
                 
                 webbrowser.open("https://dementia-prediction.streamlit.app/")
+                platform.system()
+
 
 
 
