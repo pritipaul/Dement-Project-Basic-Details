@@ -23,7 +23,7 @@ def main():
     st.markdown("""<h1 style='text-align: center;'>Player Basic Information</h1>""", unsafe_allow_html=True)
     # st.title("Dementia Classifier using MOD-1D-CNN")
     st.write("Please Enter the Basic Details and Proceed Further !!!")
-    st.write("**Health Metrics Input Format:**")
+    st.write("**Basic Information Input Format:**")
     bullet_points = [
         "**Name :- FirstName LastName**",
         "**Email I'd :- For Example: abc@gmail.com**",
@@ -89,7 +89,7 @@ def main():
                 conn.update(worksheet="PatientDetails", data=updated_df)
 
                 # Show success message
-                st.success("Health Metrics Details Successfully Submitted!")
+                st.success("Basic Details Successfully Submitted!")
                 
                 # webbrowser.open("http://localhost:8501/Dementia-Prediction-main/app.py")
 
