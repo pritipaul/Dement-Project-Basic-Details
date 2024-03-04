@@ -101,7 +101,7 @@ def main():
                 import app
                 app.main()
                 """
-                st.script_runner(script)
+                st.script_runne(script)
 
                 # Raise RerunException to stop execution of the current script and run the new one
                 raise RerunException
