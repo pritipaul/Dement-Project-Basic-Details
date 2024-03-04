@@ -13,8 +13,11 @@ existing_data = conn.read(worksheet="PatientDetails", usecols=list(range(7)), tt
 existing_data = existing_data.dropna(how="all")
 
 
+# def redirect(_url):
+#     link = st.markdown(link, unsafe_allow_html=True)
 def redirect(_url):
-    link = st.markdown(link, unsafe_allow_html=True)
+    st.markdown(f'<a href="{_url}" target="_blank">Redirecting...</a>', unsafe_allow_html=True)
+    st.experimental_rerun()
 
 
 # Streamlit app code
@@ -91,8 +94,8 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                
-                webbrowser.open("https://dementia-prediction.streamlit.app/")
+                redirect("https://dementia-prediction.streamlit.app/")
+                # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
 
