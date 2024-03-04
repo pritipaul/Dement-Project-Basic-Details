@@ -16,8 +16,8 @@ existing_data = existing_data.dropna(how="all")
 # def redirect(_url):
 #     link = st.markdown(link, unsafe_allow_html=True)
 def redirect(_url):
-    st.markdown(f'<a href="{_url}" target="_blank">Redirecting...</a>', unsafe_allow_html=True)
-    st.experimental_rerun()
+    st.markdown(f'<script>window.open("{_url}","_blank");</script>', unsafe_allow_html=True)
+    st.stop()
 
 
 # Streamlit app code
