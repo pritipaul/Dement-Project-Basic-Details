@@ -89,9 +89,9 @@ def main():
                 conn.update(worksheet="PatientDetails", data=updated_df)
 
                 # Show success message
-                st.success("Basic Details Successfully Submitted!")
+                st.success("Basic Information Successfully Submitted!")
                 
-                # webbrowser.open("http://localhost:8501/Dementia-Prediction-main/app.py")
+                webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
 
