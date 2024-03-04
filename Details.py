@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
-from streamlit.report_thread import RerunException
 # import phonenumbers
 import webbrowser
 
@@ -96,15 +95,6 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                # Launch app.py using script_runner
-                script = """
-                import app
-                app.main()
-                """
-                st._legacy_script_runner(script)
-
-                # Raise RerunException to stop execution of the current script and run the new one
-                raise RerunException
                 # redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
