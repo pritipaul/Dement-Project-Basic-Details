@@ -18,6 +18,10 @@ existing_data = existing_data.dropna(how="all")
 # def redirect(_url):
 #     st.markdown(f'<script>window.open("{_url}","_blank");</script>', unsafe_allow_html=True)
 #     st.stop()
+def redirect(_url):
+    nav_script = f'<meta http-equiv="refresh" content="0;url={_url}">'
+    st.markdown(nav_script, unsafe_allow_html=True)
+    st.stop()
 
 # Streamlit app code
 def main():
@@ -93,6 +97,7 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
+                redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
