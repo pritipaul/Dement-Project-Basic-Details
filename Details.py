@@ -18,8 +18,8 @@ existing_data = existing_data.dropna(how="all")
 # def redirect(_url):
 #     st.markdown(f'<script>window.open("{_url}","_blank");</script>', unsafe_allow_html=True)
 #     st.stop()
-def redirect(_url):
-    nav_script = f'<meta http-equiv="refresh" content="0;url={_url}">'
+def redirect(_url, delay=3):
+    nav_script = f'<meta http-equiv="refresh" content="{delay};url={_url}">'
     st.markdown(nav_script, unsafe_allow_html=True)
     st.stop()
 
