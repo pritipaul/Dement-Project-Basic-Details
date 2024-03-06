@@ -98,9 +98,7 @@ def main():
                 # redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
-                if st.button('Go to Google'):
-                    st.markdown('[Click here](https://dementia-prediction.streamlit.app/) to go to Google')
-
+                
 
 
 
