@@ -98,6 +98,10 @@ def main():
                 # redirect("https://dementia-prediction.streamlit.app/")
                 webbrowser.open("https://dementia-prediction.streamlit.app/")
 
+                import platform
+                platform.system()
+
+
 
 
 
