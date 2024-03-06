@@ -95,7 +95,7 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                # redirect("https://dementia-prediction.streamlit.app/")
+                redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
