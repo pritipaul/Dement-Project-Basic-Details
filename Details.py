@@ -4,7 +4,6 @@ from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
 # import phonenumbers
 import webbrowser
-from st_functions import st_button, load_css
 
 
 
@@ -98,7 +97,6 @@ def main():
                 st.success("Basic Information Successfully Submitted!")
                 # redirect("https://dementia-prediction.streamlit.app/")
                 # webbrowser.open("https://dementia-prediction.streamlit.app/")
-                st_button('youtube', 'https://youtube.com/dataprofessor', 'Data Professor YouTube channel', icon_size)
 
                 
 
