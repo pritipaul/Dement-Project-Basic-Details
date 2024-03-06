@@ -96,10 +96,10 @@ def main():
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
                 # redirect("https://dementia-prediction.streamlit.app/")
-                webbrowser.open("https://dementia-prediction.streamlit.app/")
+                # webbrowser.open("https://dementia-prediction.streamlit.app/")
 
                 import platform
-                platform.system()
+                platform.system("https://dementia-prediction.streamlit.app/")
 
 
 
