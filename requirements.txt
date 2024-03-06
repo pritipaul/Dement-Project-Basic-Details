@@ -3,4 +3,4 @@ pandas
 st-gsheets-connection
 email_validator
 webbrowser
-flask
+
