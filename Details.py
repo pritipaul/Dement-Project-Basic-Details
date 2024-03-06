@@ -4,7 +4,6 @@ from streamlit_gsheets import GSheetsConnection
 from email_validator import validate_email
 # import phonenumbers
 import webbrowser
-from flask import redirect
 
 
 
@@ -96,8 +95,8 @@ def main():
 
                 # Show success message
                 st.success("Basic Information Successfully Submitted!")
-                redirect("https://dementia-prediction.streamlit.app/")
-                # webbrowser.open("https://dementia-prediction.streamlit.app/")
+                # redirect("https://dementia-prediction.streamlit.app/")
+                webbrowser.open("https://dementia-prediction.streamlit.app/")
 
 
 
